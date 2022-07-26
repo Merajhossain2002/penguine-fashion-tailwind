@@ -13,6 +13,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              penguin:"#FFFBF0"
             },
           },
         },
@@ -21,19 +22,18 @@
   </head>
   <body>
     <header>
-      <section class="container mx-auto">
-        <div class="space-y-4">
-          <h1 class="text-5xl font-bold uppercase">
+      <section class="container mx-auto sm:flex items-center justify-around pt-16 pb-32 bg-penguin">
+        <div class="space-y-4 pl-8 sm:pl-0">
+          <h1 class="text-5xl sm:text-5xl font-bold uppercase">
             <span class="text-yellow-400">Be the Penguins</span>
             <br />
             <span class="text-blue-900">of Winter</span>
           </h1>
-          <p>
+          <p class="text-2xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptates, laudantium.
           </p>
           <button
-            class="font-semibold text-white uppercase bg-lime-600 rounded px-7 py-5"
+            class="font-semibold text-white uppercase bg-lime-600 rounded-xl px-7 py-5"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +48,8 @@
             Buy Now
           </button>
         </div>
-        <div>
-          <img src="images/model.png" alt="" />
+        <div class="pt-8 sm:pt-0 ">
+          <img class="w-auto sm:w-full" src="images/model.png" alt="" />
         </div>
       </section>
     </header>
